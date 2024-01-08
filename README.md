@@ -84,13 +84,9 @@ The second line contains 𝑚 integers t<sub>i</sub> — the times in seconds it
 
 <details>
 <summary>1. HashingWithChains.java</summary>
+
    
-   + **Description**: Implement a hash table with list chaining. You are already given the number of buckets 𝑚 and the hash function. It is a polynomial hash function
-
-
-<p width="100%" align="center"> <img width="347" alt="Equation" src="https://github.com/AfonsoBernardes/DataStructures/assets/84087794/48763ea3-f2d3-47fb-b177-98a862b52988"> </p>
-
-where 𝑆[𝑖] is the ASCII code of the 𝑖-th symbol of 𝑆, 𝑝 = 1 000 000 007 and 𝑥 = 263. The program should support the following kinds of queries:
+   + **Description**: Implement a hash table with list chaining. You are already given the number of buckets 𝑚 and the hash function. The program should support the following kinds of queries:
 
       + add *string* — insert *string* into the table. If there is already such a string in the hash table, then just ignore the query.
 
@@ -99,6 +95,12 @@ where 𝑆[𝑖] is the ASCII code of the 𝑖-th symbol of 𝑆, 𝑝 = 1 000 0
       + find *string* — output “yes" or “no" (without quotes) depending on whether the table contains *string* or not.
 
       + check *𝑖* — output the content of the 𝑖-th list in the table. Use spaces to separate the elements of the list. If 𝑖-th list is empty, output a blank line.
+   
+   The hash function is polynomial, as seen below.
+
+   <p width="100%" align="center"> <img width="347" alt="Equation" src="https://github.com/AfonsoBernardes/DataStructures/assets/84087794/48763ea3-f2d3-47fb-b177-98a862b52988"> </p>
+
+   where 𝑆[𝑖] is the ASCII code of the 𝑖-th symbol of 𝑆, 𝑝 = 1 000 000 007 and 𝑥 = 263. 
 
 When inserting a new string into a hash chain, it must be inserted in the beginning of the chain
   
