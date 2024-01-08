@@ -5,19 +5,22 @@
 
 ### Assignment 1 - Week 1 ###
 
-1. **CheckBrackets.java**:
+<details>
+<summary>1. CheckBrackets.java</summary>
    
    - *Description*: Priority is to find the first unmatched closing bracket which either does not have an opening bracket before it - like "]" in "]()" - or closes the wrong opening bracket - like "}" in "()[}". If there are no such mistakes, then it should find the first unmatched opening bracket without the corresponding closing bracket after it - like "(" in "{}([]". If there are no mistakes, the text editor should inform the user that brackets are correct.
-  
+     
    - *Input Format*: Input contains one string 𝑆 which consists of big and small Latin letters, digits, punctuation marks and brackets from the set "[]{}()".
-  
+     
    - *Constraints*: The length of 𝑆 is at least 1 and at most 10^5.
-  
+     
    - *Output Format*: If the code in 𝑆 uses brackets correctly, output “Success" (without the quotes). Otherwise,
-output the 1-based index of the first unmatched closing bracket, and if there are no unmatched closing
-brackets, output the 1-based index of the first unmatched opening bracket.
+   output the 1-based index of the first unmatched closing bracket, and if there are no unmatched closing
+   brackets, output the 1-based index of the first unmatched opening bracket.
+</details>
 
-2. **StackWithMax.java**:
+<details>
+<summary>2. StackWithMax.java</summary>
    
    - *Description*: Implement a stack that also supports finding the maximum value (besides push and pop) and ensures that all operations still work in constant time.
   
@@ -26,8 +29,10 @@ brackets, output the 1-based index of the first unmatched opening bracket.
    - *Constraints*: 1 ≤ 𝑞 ≤ 400 000, 0 ≤ 𝑣 ≤ 10^5.
   
    - *Output Format*: For each max query, output (on a separate line) the maximum value of the stack.
+</details>
   
-3. **TreeHeight.java**:
+<details>
+<summary>3. TreeHeight.java</summary>
    
    - *Description*: Read a description of a rooted tree from the
 input, implement the tree data structure, store the tree and compute its height. The height of a (rooted) tree is the maximum depth of a node or the maximum distance from a leaf to the root. You are given an arbitrary tree, not necessarily a binary tree.
@@ -37,11 +42,14 @@ input, implement the tree data structure, store the tree and compute its height.
    - *Constraints*: 1 ≤ 𝑛 ≤ 10^5.
   
    - *Output Format*: 1 ≤ 𝑛 ≤ 10^5.
+</details>
 
+-----
 
 ### Assignment 1 - Week 3 ###
 
-1. **ConvertArrayToHeap.java**:
+<details>
+<summary>1. ConvertArrayToHeap.java</summary>
    
    - *Description*: Implement the first step of the HeapSort algorithm and convert a given array of integers into a heap. That can be done by applying a certain number of swaps, i.e., exchange elements 𝑎<sub>𝑖</sub> and 𝑎<sub>j</sub> of the array **𝑎** for some **𝑖** and **𝑗**. Convert the array into a heap using only 𝑂(𝑛) swaps. Use a min-heap instead of a max-heap in this problem. 
   
@@ -54,10 +62,11 @@ input, implement the tree data structure, store the tree and compute its height.
       1. If 2𝑖 + 1 ≤ 𝑛 − 1, then 𝑎<sub>𝑖</sub> < 𝑎<sub>2𝑖+1</sub>.
       2. If 2𝑖 + 2 ≤ 𝑛 − 1, then 𝑎<sub>𝑖</sub> < 𝑎<sub>2𝑖+2</sub>.
          
-Note that all the elements of the input array are distinct.
+   Note that all the elements of the input array are distinct.
+</details>
 
-
-2. **ParallelProcessing.java**:
+<details>
+<summary>2. ParallelProcessing.java</summary>
    
    - *Description*: A program which is parallelized uses 𝑛 independent threads to process the given list of 𝑚 jobs. Threads take jobs in the order they are given in the input. If there is a free thread, it immediately takes the next job from the list. If a thread has started processing a job, it doesn’t interrupt or stop until it finishes processing the job. If several threads try to take jobs from the list simultaneously, the thread with smaller index takes the job. For each job, it is known exactly how long will it take any thread to process this job, and this time is the same for all the threads. You need to determine for each job which thread will process it and when will it start processing.
   
@@ -67,5 +76,5 @@ The second line contains 𝑚 integers t<sub>i</sub> — the times in seconds it
    - *Constraints*: 1 ≤ 𝑛 ≤ 10^5; 1 ≤ 𝑚 ≤ 10^5; 0 ≤ t<sub>i</sub> ≤ 10^9
      
    - *Output Format*: Output exactly 𝑚 lines. 𝑖-th line (0-based index is used) should contain two space-separated integers — the 0-based index of the thread which will process the 𝑖-th job and the time in seconds when it will start processing that job.
-
+</details>
 
