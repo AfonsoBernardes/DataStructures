@@ -1,9 +1,9 @@
 # Data Structures #
 
-### Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ###
+## Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ##
 
 
-####Assignment 1 - WEEK 1####
+### Assignment 1 - Week 1 ###
 
 1. **CheckBrackets.java**:
    
@@ -39,7 +39,7 @@ input, implement the tree data structure, store the tree and compute its height.
    - *Output Format*: 1 ≤ 𝑛 ≤ 10^5.
 
 
-<ins>Assignment 1 - WEEK 3</ins>
+### Assignment 1 - Week 3 ###
 
 1. **ConvertArrayToHeap.java**:
    
