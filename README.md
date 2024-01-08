@@ -3,7 +3,7 @@
 ### Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ###
 
 
-<ins>Assignment 1 - WEEK 1</ins>
+####Assignment 1 - WEEK 1####
 
 1. **CheckBrackets.java**:
    
