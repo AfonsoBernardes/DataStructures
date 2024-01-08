@@ -3,7 +3,7 @@
 ### Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ###
 
 
-<ins>WEEK 1</ins>
+<ins>Assignment 1 - WEEK 1</ins>
 
 1. **CheckBrackets.java**:
    
@@ -39,7 +39,7 @@ input, implement the tree data structure, store the tree and compute its height.
    - *Output Format*: 1 ≤ 𝑛 ≤ 10^5.
 
 
-<ins>WEEK 1</ins>
+<ins>Assignment 1 - WEEK 3</ins>
 
 1. **ConvertArrayToHeap.java**:
    
