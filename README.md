@@ -1,4 +1,4 @@
-# Data Structures #
+<div width="100%" align="center"> <h1> Data Structures </h1> </div>
 
 ## Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ##
 
@@ -127,4 +127,58 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
    + **Constraints**: 1 ≤ 𝑁 ≤ 10^5. All phone numbers consist of decimal digits, they don’t have leading zeros, and each has no more than seven digits. All names are non-empty strings of Latin letters, each of which has a length of at most fifteen. It’s guaranteed that there is no person with the name “not found".
      
    + **Output Format**: Print the result of each "find" query — the name corresponding to the phone number or “not found" (without quotes) if there is no person in the phone book with such a phone number. Output one result per line in the same order as the find queries given in the input.
+</details>
+
+-----
+
+### Assignment 4 - Week 6 ###
+
+<details>
+<summary>1. BinaryTreeTraversals.java</summary>
+   
+   + **Description**: Given a rooted binary tree. Build and output its in-order, pre-order and post-order traversals.
+  
+   + **Input Format**: The first line contains the number of vertices 𝑛. The vertices of the tree are numbered from 0 to 𝑛 − 1. Vertex 0 is the root.
+
+     The next 𝑛 lines contain information about vertices 0, 1, ..., 𝑛−1 in order. Each of these lines contains three integers key<sub>i</sub>, left<sub>i</sub> and right<sub>i</sub> — key<sub>i</sub> is the key of the 𝑖-th vertex, left<sub>i</sub> is the index of the left child of the 𝑖-th vertex, and right<sub>i</sub> is the index of the right child of the 𝑖-th vertex. If 𝑖 doesn’t have a left or right child (or both), the corresponding left<sub>i</sub> or right<sub>i</sub> (or both) will be equal to −1.
+
+   + **Constraints**: 1 ≤ 𝑛 ≤ 10^5; 0 ≤ key<sub>i</sub> ≤ 10^9; −1 ≤ left<sub>i</sub>, right<sub>i</sub> ≤ 𝑛 − 1. It is guaranteed that the input represents a valid binary tree. In particular, if left<sub>i</sub> ̸$ \ne $ −1 and right<sub>i</sub> ̸= −1, then left<sub>i</sub> ̸= right<sub>i</sub>. Also, a vertex cannot be a child of two different vertices. Also, each vertex is a descendant of the root vertex.
+  
+   + **Output Format**: Print three lines. The first line should contain the keys of the vertices in the in-order traversal of the tree. The second line should contain the keys of the vertices in the pre-order traversal of the tree. The third line should contain the keys of the vertices in the post-order traversal of the tree.
+</details>
+
+<details>
+<summary>2. IsBinarySearchTree.java</summary>
+   
+   + **Description**: 
+  
+   + **Input Format**: 
+     
+   + **Constraints**: 
+     
+   + **Output Format**: 
+</details>
+
+<details>
+<summary>3. SetRangeSum.java</summary>
+   
+   + **Description**: 
+  
+   + **Input Format**: 
+     
+   + **Constraints**: 
+     
+   + **Output Format**: 
+</details>
+
+<details>
+<summary>4. Vertex</summary>
+   
+   + **Description**: 
+  
+   + **Input Format**: 
+     
+   + **Constraints**: 
+     
+   + **Output Format**: 
 </details>
