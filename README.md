@@ -12,7 +12,7 @@
      
    + **Input Format**: Input contains one string 𝑆 which consists of big and small Latin letters, digits, punctuation marks and brackets from the set "[]{}()".
      
-   + **Constraints**: The length of 𝑆 is at least 1 and at most 10^5.
+   + **Constraints**: The length of 𝑆 is at least 1 and at most 10<sup>5</sup>.
      
    + **Output Format**: If the code in 𝑆 uses brackets correctly, output “Success" (without the quotes). Otherwise,
    output the 1-based index of the first unmatched closing bracket, and if there are no unmatched closing
@@ -26,7 +26,7 @@
   
    + **Input Format**: The first line of the input contains the number 𝑞 of queries. Each of the following 𝑞 lines specifies a query of one of the following formats: push v, pop, or max.
   
-   + **Constraints**: 1 ≤ 𝑞 ≤ 400 000, 0 ≤ 𝑣 ≤ 10^5.
+   + **Constraints**: 1 ≤ 𝑞 ≤ 400 000, 0 ≤ 𝑣 ≤ 10<sup>5</sup>.
   
    + **Output Format**: For each max query, output (on a separate line) the maximum value of the stack.
 </details>
@@ -39,9 +39,9 @@ input, implement the tree data structure, store the tree and compute its height.
   
    + **Input Format**: The first line contains the number of nodes 𝑛. The second line contains 𝑛 integer numbers from −1 to 𝑛 − 1 — parents of nodes. If the 𝑖-th one of them (0 ≤ 𝑖 ≤ 𝑛 − 1) is −1, node 𝑖 is the root, otherwise it’s the 0-based index of the parent of the 𝑖-th node. It is guaranteed that there is exactly one root. It is guaranteed that the input represents a tree.
   
-   + **Constraints**: 1 ≤ 𝑛 ≤ 10^5.
+   + **Constraints**: 1 ≤ 𝑛 ≤ 10<sup>5</sup>.
   
-   + **Output Format**: 1 ≤ 𝑛 ≤ 10^5.
+   + **Output Format**: 1 ≤ 𝑛 ≤ 10<sup>5</sup>.
 </details>
 
 -----
@@ -55,7 +55,7 @@ input, implement the tree data structure, store the tree and compute its height.
   
    + **Input Format**: The first line of the input contains a single integer 𝑛. The next line contains 𝑛 space-separated integers 𝑎<sub>𝑖</sub>.
 
-   + **Constraints**: 1 ≤ 𝑛 ≤ 100 000; 0 ≤ 𝑖, 𝑗 ≤ 𝑛 − 1; 0 ≤ 𝑎<sub>0</sub>, 𝑎<sub>1</sub>, . . . , 𝑎<sub>n-1</sub> ≤ 109. All 𝑎<sub>𝑖</sub> are distinct.
+   + **Constraints**: 1 ≤ 𝑛 ≤ 100 000; 0 ≤ 𝑖, 𝑗 ≤ 𝑛 − 1; 0 ≤ 𝑎<sub>0</sub>, 𝑎<sub>1</sub>, . . . , 𝑎<sub>n-1</sub> ≤ 10<sup>9</sup>. All 𝑎<sub>𝑖</sub> are distinct.
   
    + **Output Format**: The first line of the output should contain a single integer 𝑚 — the total number of swaps. 𝑚 must satisfy conditions 0 ≤ 𝑚 ≤ 4𝑛. The next 𝑚 lines should contain the swap operations used to convert the array 𝑎 into a heap. Each swap is described by a pair of integers 𝑖, 𝑗 — the 0-based indices of the elements to be swapped. After applying all the swaps in the specified order the array must become a heap, that is, for each 𝑖 where 0 ≤ 𝑖 ≤ 𝑛 − 1 the following conditions must be true:
      
@@ -73,7 +73,7 @@ input, implement the tree data structure, store the tree and compute its height.
    + **Input Format**: The first line of the input contains integers 𝑛 and 𝑚.
 The second line contains 𝑚 integers t<sub>i</sub> — the times in seconds it takes any thread to process 𝑖-th job. The times are given in the same order as they are in the list from which threads take jobs. Threads are indexed starting from 0.
      
-   + **Constraints**: 1 ≤ 𝑛 ≤ 10^5; 1 ≤ 𝑚 ≤ 10^5; 0 ≤ t<sub>i</sub> ≤ 10^9
+   + **Constraints**: 1 ≤ 𝑛 ≤ 10<sup>5</sup>; 1 ≤ 𝑚 ≤ 10<sup>5</sup>; 0 ≤ t<sub>i</sub> ≤ 10<sup>9</sup>
      
    + **Output Format**: Output exactly 𝑚 lines. 𝑖-th line (0-based index is used) should contain two space-separated integers — the 0-based index of the thread which will process the 𝑖-th job and the time in seconds when it will start processing that job.
 </details>
@@ -106,7 +106,7 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
   
    + **Input Format**: There is a single integer 𝑚 in the first line — the number of buckets you should have. The next line contains the number of queries 𝑁. It’s followed by 𝑁 lines, each of which contains one query in the format described above.
 
-   + **Constraints**: 1 ≤ 𝑁 ≤ 10^5; 𝑁/5 ≤ 𝑚 ≤ 𝑁. All the strings consist of Latin letters. Each of them is non-empty and has a length of at most 15.
+   + **Constraints**: 1 ≤ 𝑁 ≤ 10<sub>5</sub>; 𝑁/5 ≤ 𝑚 ≤ 𝑁. All the strings consist of Latin letters. Each of them is non-empty and has a length of at most 15.
   
    + **Output Format**: Print the result of each of the "find" and "check" queries, one result per line, in the same order as these queries are given in the input.
 </details>
@@ -124,7 +124,7 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
   
    + **Input Format**: There is a single integer 𝑁 in the first line — the number of queries. It’s followed by 𝑁 lines, each of them containing one query in the format described above.
      
-   + **Constraints**: 1 ≤ 𝑁 ≤ 10^5. All phone numbers consist of decimal digits, they don’t have leading zeros, and each has no more than seven digits. All names are non-empty strings of Latin letters, each of which has a length of at most fifteen. It’s guaranteed that there is no person with the name “not found".
+   + **Constraints**: 1 ≤ 𝑁 ≤ 10<sup>5</sup>. All phone numbers consist of decimal digits, they don’t have leading zeros, and each has no more than seven digits. All names are non-empty strings of Latin letters, each of which has a length of at most fifteen. It’s guaranteed that there is no person with the name “not found".
      
    + **Output Format**: Print the result of each "find" query — the name corresponding to the phone number or “not found" (without quotes) if there is no person in the phone book with such a phone number. Output one result per line in the same order as the find queries given in the input.
 </details>
@@ -142,7 +142,7 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
 
      The next 𝑛 lines contain information about vertices 0, 1, ..., 𝑛−1 in order. Each of these lines contains three integers key<sub>i</sub>, left<sub>i</sub> and right<sub>i</sub> — key<sub>i</sub> is the key of the 𝑖-th vertex, left<sub>i</sub> is the index of the left child of the 𝑖-th vertex, and right<sub>i</sub> is the index of the right child of the 𝑖-th vertex. If 𝑖 doesn’t have a left or right child (or both), the corresponding left<sub>i</sub> or right<sub>i</sub> (or both) will be equal to −1.
 
-   + **Constraints**: 1 ≤ 𝑛 ≤ 10^5; 0 ≤ key<sub>i</sub> ≤ 10^9; −1 ≤ left<sub>i</sub>, right<sub>i</sub> ≤ 𝑛 − 1. It is guaranteed that the input represents a valid binary tree. In particular, if left<sub>i</sub> ≠ -1 and right<sub>i</sub> ≠ -1, then left<sub>i</sub> ≠ right<sub>i</sub>. Also, a vertex cannot be a child of two different vertices and each vertex is a descendant of the root vertex.
+   + **Constraints**: 1 ≤ 𝑛 ≤ 10<sup>5</sup>; 0 ≤ key<sub>i</sub> ≤ 10<sup>9</sup>; −1 ≤ left<sub>i</sub>, right<sub>i</sub> ≤ 𝑛 − 1. It is guaranteed that the input represents a valid binary tree. In particular, if left<sub>i</sub> ≠ -1 and right<sub>i</sub> ≠ -1, then left<sub>i</sub> ≠ right<sub>i</sub>. Also, a vertex cannot be a child of two different vertices and each vertex is a descendant of the root vertex.
   
    + **Output Format**: Print three lines. The first line should contain the keys of the vertices in the in-order traversal of the tree. The second line should contain the keys of the vertices in the pre-order traversal of the tree. The third line should contain the keys of the vertices in the post-order traversal of the tree.
 </details>
