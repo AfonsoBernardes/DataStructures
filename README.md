@@ -138,7 +138,7 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
    
    + **Description**: Given a rooted binary tree. Build and output its in-order, pre-order and post-order traversals.
   
-   + **Input Format**: The first line contains the number of vertices 𝑛. The vertices of the tree are numbered from 0 to 𝑛 − 1. Vertex 0 is the root.
+   + **Input Format**: The first line contains the number of vertices 𝑛. The vertices of the tree are numbered from 0 to 𝑛−1. Vertex 0 is the root.
 
      The next 𝑛 lines contain information about vertices 0, 1, ..., 𝑛−1 in order. Each of these lines contains three integers key<sub>i</sub>, left<sub>i</sub> and right<sub>i</sub> — key<sub>i</sub> is the key of the 𝑖-th vertex, left<sub>i</sub> is the index of the left child of the 𝑖-th vertex, and right<sub>i</sub> is the index of the right child of the 𝑖-th vertex. If 𝑖 doesn’t have a left or right child (or both), the corresponding left<sub>i</sub> or right<sub>i</sub> (or both) will be equal to −1.
 
@@ -150,25 +150,39 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
 <details>
 <summary>2. IsBinarySearchTree.java</summary>
    
-   + **Description**: 
+   + **Description**: Given a binary tree with integers as its keys, test whether it is a correct binary search tree. The definition of the binary search tree is the following: for any node of the tree, if its key is 𝑥, then for any node in its left subtree its key must be strictly less than 𝑥, and for any node in its right subtree its key must be strictly greater than 𝑥. In other words, smaller elements are to the left, and bigger elements are to the right. You need to check whether the given binary tree structure satisfies this condition. We are guaranteed that the input contains a valid binary tree, that is, it is a tree, and each node has at most two children.
   
-   + **Input Format**: 
+   + **Input Format**: The first line contains the number of vertices 𝑛. The vertices of the tree are numbered from 0 to 𝑛−1. Vertex 0 is the root. The next 𝑛 lines contain information about vertices 0, 1, ..., 𝑛−1 in order. Each of these lines contains three integers key<sub>i</sub>, left<sub>i</sub> and right<sub>i</sub> — key<sub>i</sub> is the key of the 𝑖-th vertex, left<sub>i</sub> is the index of the left child of the 𝑖-th vertex, and right<sub>i</sub> is the index of the right child of the 𝑖-th vertex. If 𝑖 doesn’t have a left or right child (or both), the corresponding left<sub>i</sub> or right<sub>i</sub> (or both) will be equal to −1
      
-   + **Constraints**: 
+   + **Constraints**: 0 ≤ 𝑛 ≤ 10<sup>5</sup>; −2<sup>31</sup> < key<sub>i</sub> < 2<sup>31</sup> − 1; −1 ≤ left<sub>i</sub>, right<sub>i</sub> ≤ 𝑛−1. It is guaranteed that the input represents a valid binary tree. In particular, if left<sub>i</sub> ≠ -1 and right<sub>i</sub> ≠ -1, then left<sub>i</sub> ≠ right<sub>i</sub>. Also, a vertex cannot be a child of two different vertices, and each vertex is a descendant of the root vertex. All keys in the input will be different.
      
-   + **Output Format**: 
+   + **Output Format**: If the given binary tree is a correct binary search tree (see the definition in the problem description), output one word “CORRECT” (without quotes). Otherwise, output one word “INCORRECT” (without quotes).
 </details>
 
 <details>
 <summary>3. SetRangeSum.java</summary>
    
-   + **Description**: 
+   + **Description**: Implement a data structure that stores a set 𝑆 of integers with the following allowed operations:
+       + add(𝑖) — add integer 𝑖 into the set 𝑆 (if it was there already, the set doesn’t change).
+       + del(𝑖) — remove integer 𝑖 from the set 𝑆 (if there was no such element, nothing happens).
+       + find(𝑖) — check whether 𝑖 is in the set 𝑆 or not.
+       + sum(𝑙, 𝑟) — output the sum of all elements 𝑣 in 𝑆 such that 𝑙 ≤ 𝑣 ≤ 𝑟.
   
-   + **Input Format**: 
+   + **Input Format**: Initially the set 𝑆 is empty. The first line contains 𝑛 — the number of operations. The next 𝑛 lines contain operations. Each operation is one of the following:
+       + “+ i" — which means add some integer (not 𝑖, see below) to 𝑆,
+       + “- i" — which means del some integer (not 𝑖, see below)from 𝑆,
+       + “? i" — which means find some integer (not 𝑖, see below)in 𝑆,
+       + “s l r" — which means compute the sum of all elements of 𝑆 within some range of values (not from 𝑙 to 𝑟, see below).
+
+     However, to make sure that the solution can work in an online fashion, each request will depend on the result of the last "sum" request. Denote 𝑀 = 1 000 000 001. At any moment, let 𝑥 be the result of the last sum operation, or just 0 if there were no sum operations before. Then
+      + “+ i" means add((𝑖 + 𝑥) mod 𝑀),
+      + “- i" means del((𝑖 + 𝑥) mod 𝑀),
+      + “? i" means find((𝑖 + 𝑥) mod 𝑀),
+      + “s l r" means sum((𝑙 + 𝑥) mod 𝑀, (𝑟 + 𝑥) mod 𝑀).
      
-   + **Constraints**: 
+   + **Constraints**: 1 ≤ 𝑛 ≤ 100 000; 0 ≤ 𝑖 ≤ 10<sup>9</sup>.
      
-   + **Output Format**: 
+   + **Output Format**: For each find request, output “Found" or “Not found" (without quotes; note that the first letter is capital) depending on whether (𝑖 + 𝑥) mod 𝑀 is in 𝑆 or not. For each sum query, output the sum of all the values 𝑣 in 𝑆 such that ((𝑙+𝑥) mod 𝑀) ≤ 𝑣 ≤ ((𝑟+𝑥) mod 𝑀) (it is guaranteed that in all the tests ((𝑙 + 𝑥) mod 𝑀) ≤ ((𝑟 + 𝑥) mod 𝑀)), where 𝑥 is the result of the last sum operation or 0 if there was no previous sum operation
 </details>
 
 <details>
