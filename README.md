@@ -184,15 +184,3 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
      
    + **Output Format**: For each find request, output “Found" or “Not found" (without quotes; note that the first letter is capital) depending on whether (𝑖 + 𝑥) mod 𝑀 is in 𝑆 or not. For each sum query, output the sum of all the values 𝑣 in 𝑆 such that ((𝑙+𝑥) mod 𝑀) ≤ 𝑣 ≤ ((𝑟+𝑥) mod 𝑀) (it is guaranteed that in all the tests ((𝑙 + 𝑥) mod 𝑀) ≤ ((𝑟 + 𝑥) mod 𝑀)), where 𝑥 is the result of the last sum operation or 0 if there was no previous sum operation
 </details>
-
-<details>
-<summary>4. Vertex</summary>
-   
-   + **Description**: 
-  
-   + **Input Format**: 
-     
-   + **Constraints**: 
-     
-   + **Output Format**: 
-</details>
