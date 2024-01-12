@@ -3,7 +3,7 @@
 ## Solutions of Coursera's "Data Structures" course, part of the "Data Structures and Algorithms Specialization"; offered by the University of California San Diego and HSE University. ##
 
 
-### Assignment 1 - Week 1 ###
+### Assignment 1 (Week 1): Basic Data Structures ###
 
 <details>
 <summary>1. CheckBrackets.java</summary>
@@ -44,7 +44,7 @@ input, implement the tree data structure, store the tree and compute its height.
 
 -----
 
-### Assignment 2 - Week 3 ###
+### Assignment 2 (Week 3): Priority Queues and Disjoint Sets ###
 
 <details>
 <summary>1. ConvertArrayToHeap.java</summary>
@@ -78,7 +78,7 @@ The second line contains 𝑚 integers t<sub>i</sub> — the times in seconds it
 
 ----
 
-### Assignment 3 - Week 4 ###
+### Assignment 3 (Week 4): Hash Tables and Hash Functions ###
 
 <details>
 <summary>1. HashingWithChains.java</summary>
@@ -129,7 +129,7 @@ When inserting a new string into a hash chain, it must be inserted in the beginn
 
 -----
 
-### Assignment 4 - Week 6 ###
+### Assignment 4 (Week 6): Binary Search Trees ###
 
 <details>
 <summary>1. BinaryTreeTraversals.java</summary>
